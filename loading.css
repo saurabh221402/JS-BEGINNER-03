@@ -10,19 +10,23 @@
 .main_box
 {
     position: absolute;
-    width:50%;
-    min-width: 250px;
-    min-height: 350px;
+    width:70%;
+    min-width: 350px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     top: 50%;
     left: 50%; 
     border: 1px solid black; 
     transform: translate(-50%,-50%);
 }
+
 .box{
     position: relative;
-    width:50%;
-    min-width: 250px;
-    min-height: 350px;
+    width:33%;
+    min-width: 80px;
+    min-height: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,19 +34,40 @@
 .box div
 {
     position: absolute;
-    border-radius: 50%;
-    border:1px solid red; 
+    border-radius: 50%; 
 }
 .inner_bor
 {
-    width: 250px;
-    height: 250px; 
+    width: 100px;
+    height: 100px;
+    min-width: 80px;
+    min-height: 80px;
     background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_bor div{
+    font-weight: bold;
+    color: #555;
 }
 .outter_bor
 {
-    width: 260px;
-    height: 260px;
+    width: 120px;
+    height: 120px;
+    min-width: 80px;
+    min-height: 80px;
     background-color: #542523;
     z-index: -1;
+}
+@media screen and (max-width: 400px)
+{
+    .main_box{
+        display: block;
+        
+    }
+    
+    .box{
+        margin-top: 15px;
+    }
 }
