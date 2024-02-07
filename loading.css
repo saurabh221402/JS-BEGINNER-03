@@ -38,8 +38,8 @@
 }
 .inner_bor
 {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     min-width: 80px;
     min-height: 80px;
     background-color: white;
@@ -47,17 +47,17 @@
     align-items: center;
     justify-content: center;
 }
-.inner_bor div{
+.inner_bor span{
     font-weight: bold;
     color: #555;
+    text-decoration: line-through black wavy 1px;
 }
 .outter_bor
 {
     width: 120px;
     height: 120px;
     min-width: 80px;
-    min-height: 80px;
-    background-color: #542523;
+    min-height: 80px; 
     z-index: -1;
 }
 @media screen and (max-width: 400px)
@@ -69,5 +69,58 @@
     
     .box{
         margin-top: 15px;
+    }
+}
+h1{
+    text-shadow: 2px 2px 4px #000000  ,0 5px 5px blue;
+}
+svg{
+    z-index: 3;
+}
+svg circle
+{
+    stroke-width:20;
+    fill:none;
+    stroke-linecap: round;
+    stroke-dasharray: 315;
+    stroke-dashoffset: 315;
+
+   animation-duration: 2s;
+   -webkit-animation-duration: 2s;
+    
+   animation-timing-function: linear;
+   -webkit-animation-timing-function: linear;
+   animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+}
+.html circle{
+    animation-name: anim;
+    -webkit-animation-name: anim;
+    
+}
+.css circle{ 
+    animation-name: anim2;
+    -webkit-animation-name: anim2; 
+}
+.js circle{ 
+    animation-name: anim2;
+    -webkit-animation-name: anim3; 
+}
+@-webkit-keyframes anim{ 
+100%
+{
+    stroke-dashoffset: 110; 
+}
+}
+@-webkit-keyframes anim2{ 
+    100%
+    {
+        stroke-dashoffset: 231; 
+    }
+}
+@-webkit-keyframes anim3{ 
+    100%
+    {
+        stroke-dashoffset: 35; 
     }
 }
