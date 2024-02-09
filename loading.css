@@ -52,14 +52,9 @@
     color: #555;
     text-decoration: line-through black wavy 1px;
 }
-.outter_bor
-{
-    width: 120px;
-    height: 120px;
-    min-width: 80px;
-    min-height: 80px; 
-    z-index: -1;
-}
+ 
+ 
+
 @media screen and (max-width: 400px)
 {
     .main_box{
@@ -106,21 +101,27 @@ svg circle
     animation-name: anim2;
     -webkit-animation-name: anim3; 
 }
+:root
+{
+    --html_val:110;
+    --css_val:231;
+    --js_val:35;
+}
 @-webkit-keyframes anim{ 
 100%
 {
-    stroke-dashoffset: 110; 
+    stroke-dashoffset: var(--html_val); 
 }
 }
 @-webkit-keyframes anim2{ 
     100%
     {
-        stroke-dashoffset: 231; 
+        stroke-dashoffset: var(--css_val); 
     }
 }
 @-webkit-keyframes anim3{ 
     100%
     {
-        stroke-dashoffset: 35; 
+        stroke-dashoffset: var(--js_val); 
     }
 }

@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="loading.css">
+    <script src="loading.js"></script>
     <title>circular loading animation</title>
 </head>
 <body>
-    <h1 align="center">loading...</h1>
+    <h1 align="center">Circular loading animation</h1>
     <div class="main_box">
         <div class="box html">
         <div class="inner_bor">
             <span id="num1">0%</span>
-        </div>
-        <div class="outter_bor"></div>
+        </div> 
         <svg width="120" height="120">
             <circle cx="60" cy="60" r="50" stroke="red"/>
           </svg>
         </div>
         <div class="box css">
             <div class="inner_bor">
-                <span id="num2">0%</span>
-            </div>
-            <div class="outter_bor"></div>
+                <span class="num2">00</span>
+            </div> 
             <svg width="120" height="120">
                 <circle cx="60" cy="60" r="50" stroke="green"  />
               </svg>
@@ -30,12 +29,12 @@
         <div class="box js">
             <div class="inner_bor">
                 <span id="num3">0%</span>
-            </div> 
-            <div class="outter_bor"></div>
+            </div>
             <svg width="120" height="120">
-                <circle cx="60" cy="60" r="50"  stroke="blue"/>
-              </svg>
+                <circle cx="60" cy="60" r="50"  stroke="blue" />
+            </svg><br> 
         </div>
+        
 
     </div>
 </body>
